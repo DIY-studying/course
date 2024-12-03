@@ -19,3 +19,4 @@ jobs:
         with:
             message: |
               "hellow"
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
