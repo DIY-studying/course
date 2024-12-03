@@ -6,7 +6,8 @@ on:
     branches:
       - main
 name: CI
-...
+jobs:
+  write_good_job:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
