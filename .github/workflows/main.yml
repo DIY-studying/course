@@ -18,8 +18,8 @@ jobs:
     - name: write-good action step
       id: write-good
       uses: tomwhross/write-good-action@v1.6
-      # with:
-      #   directory: "manuscript" # Optional, uncomment to specify a directory to scan
+       with:
+         directory: "readme" # Optional, uncomment to specify a directory to scan
     # Use the output from the `write-good` step
     - name: Get the write-good output
       run: echo "${{ steps.write-good.outputs.result }}"
